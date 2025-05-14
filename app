@@ -2,7 +2,11 @@ import { useEffect, useState } from "react";
 import { createClient } from "@supabase/supabase-js";
 import { formatDistanceToNowStrict, isAfter } from "date-fns";
 
-const supabase = createClient("https://SEU_SUPABASE_URL", "SEU_SUPABASE_ANON_KEY");
+const supabase = createClient(
+  "https://wvdzklutaqhqytfabokn.supabase.co",
+  "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Ind2ZHprbHV0YXFocXl0ZmFib2tuIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NDcyNDQ5NzYsImV4cCI6MjA2MjgyMDk3Nn0.ShknDr1bk-c3qZ6ByF531TJyNJuvEX9ULPY7jf39vqU"
+);
+
 
 export default function Home() {
   const [session, setSession] = useState(null);
