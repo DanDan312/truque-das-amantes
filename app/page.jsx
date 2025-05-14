@@ -1,3 +1,13 @@
+"use client"; // para usar hooks
+
+import React from "react";
+
+export default function Home() {
+  return <h1>Bem-vinda ao Truque das Amantes!</h1>;
+}
+
+
+
 import { useEffect, useState } from "react";
 import { createClient } from "@supabase/supabase-js";
 import { formatDistanceToNowStrict, isAfter } from "date-fns";
